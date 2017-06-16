@@ -45,8 +45,7 @@ VOLUME ["/var/www/html", "/user-files"]
 COPY ./entrypoint.sh /
 COPY ./wait-for-it.sh /
 COPY ./import-db.sh /
-RUN chmod +x /wait-for-it.sh
-RUN chmod +x /import-db.sh
+RUN chmod +x /entrypoint.sh /wait-for-it.sh /import-db.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
