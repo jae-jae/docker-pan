@@ -7,6 +7,20 @@ Docker:`Filerun`+`AriaNg`+`Aria2`,Personal cloud disk.
 
 > filerun/docker : [https://github.com/filerun/docker](https://github.com/filerun/docker)
 
+## Run
+
+1.run mysql
+
+```
+docker run --name=db -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=filerun -e MYSQL_USER=filerun -e MYSQL_PASSWORD=filerun -dP mysql
+```
+
+2.run filerun
+
+```
+docker run --name=pan --link=db  -ti -p 8081:80 -p 6800:6800 jaegerdocker/pan
+```
+
 ## Filerun 文件管理器
 ![][1]
 ![][2]
