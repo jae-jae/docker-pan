@@ -21,6 +21,13 @@ docker run --name=db -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=filerun -e 
 docker run --name=pan --link=db  -ti -p 8081:80 -p 6800:6800 jaegerdocker/pan
 ```
 
+## 访问地址
+
+- Filerun:`http://yourdomain.com:8081`
+
+- AriaNg:`http://yourdomain.com:8081/dweb`
+
+
 ## Filerun 文件管理器
 ![][1]
 ![][2]
