@@ -6,9 +6,9 @@ if [ ! -e /var/www/html/index.php ];  then
         unzip /filerun.zip -d /var/www/html/
         cp /autoconfig.php /var/www/html/system/data/
         mkdir -p /user-files/superuser/dl
-        wget https://gist.githubusercontent.com/jae-jae/9b09a9bf90b733aed896713f56c8a1f2/raw/install-aria2-ui.sh 
+        wget https://gist.githubusercontent.com/jae-jae/9b09a9bf90b733aed896713f56c8a1f2/raw/243ed054c1e41b9e1b88890990a4bfeb5d746ee1/install-aria2-ui.sh 
         bash install-aria2-ui.sh
-        #rm -R /var/www/html/dl
+        rm -R /var/www/html/dl/files
         ln -s /user-files/superuser/dl /var/www/html/dl/files
         chown -R www-data:www-data /var/www/html
         chown -R www-data:www-data /user-files
