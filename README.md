@@ -25,6 +25,9 @@ docker run --name=pan --link=db  -ti -p 8081:80 -p 6800:6800 jaegerdocker/pan
 
 - Filerun:`http://yourdomain.com:8081`
 
+登陆用户名:`superuser`
+登陆密码:`superuser`
+
 - AriaNg:`http://yourdomain.com:8081/dweb`
 
 
